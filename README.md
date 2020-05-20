@@ -23,7 +23,7 @@ Common services includes databases(mysql, mongo etc), caching service(redis), qu
 Note:
 ```sh
 1. Staging configuration are not ideal for production usage. They are only meant for development and testing purpose.
-2. Pods in the configuration are using local disk. All the data stored in the disk will be lost if pod terminates. To prevent this use [persistent volumes] (https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+2. Pods in the staging configuration are using local disk to store data. All the data stored in the disk will be lost if the pod terminates. To prevent this use persistent volumes.
 ```
 To deploy redis to the kuberntes cluster, use following command
 
