@@ -47,7 +47,7 @@ To deploy jaeger to the kubernetes cluster, use following command
 kubectl apply -f common/jaeger/stage/
 ```
 
-To access jaeger UI, use the following command, then visit localhost:80
+To access jaeger UI, use the following command, then visit http://localhost:80 in browser
 
 ```sh
 kubectl port-forward service/jaeger-query 80:80
@@ -70,6 +70,7 @@ kubectl port-forward service/jaeger-query 80:80
 
 ### Common
 
-- [ ] mysql
-- [ ] redis
+- [x] mysql
+- [x] redis
+- [x] jaeger
 - [ ] mongo
